@@ -21,7 +21,7 @@ This Movie App is a web application built using the React framework. It leverage
 ![Movie App Preview](./preview/movies.png)
 ![Movie App Preview](./preview/fav.png)
 
-## Usage
+## Getting started
 
 1. Clone the repository to your local machine:
 
