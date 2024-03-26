@@ -49,7 +49,5 @@ This Movie App is a web application built using the React framework. It leverage
 
 5. Open your web browser and visit `http://localhost:3000` to view the Movie App.
 
-## Deployment
 
-The Movie App is deployed and accessible online. You can view it [here](deployment_link).
 
