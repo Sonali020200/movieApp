@@ -9,21 +9,22 @@ const App = () => {
   const [movies, setMovies] = useState([]);
   const [searchValue, setSearchValue] = useState('')
 
-  const getMovieRequest = async() => {
-    const url = "https://www.omdbapi.com/?s=avenger&apikey=6e7b6100"
+  const getMovieRequest = async(searchValue) => {
+    const url = `https://www.omdbapi.com/?s=${searchValue}&apikey=6e7b6100`;
     
     const response = await fetch(url);
     const responseJson = await response.json();
 
-    console.log(responseJson);
-    setMovies(responseJson.Search);
+    if (responseJson.Search){
+      setMovies(responseJson.Search);
+    }
   };
 
   useEffect(() => {
-    getMovieRequest();
-  },[]);
+    getMovieRequest(searchValue);
+  },[searchValue]);
 
-  return 
+  return (
   <div className='container-fluid movie-app'>
      <div className='row d-flex align-items-center mt-4 mb-4'>
     <MovieListHeading heading = 'Movies'/>
@@ -34,6 +35,7 @@ const App = () => {
     </div>
    
   </div>
+  )
 };
 
 export default App;
