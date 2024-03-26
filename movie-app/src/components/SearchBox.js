@@ -10,7 +10,7 @@ const SearchBox = (props) => {
 
             </input>
         </div>
-    )
-}
+    );
+};
 
 export default SearchBox;
