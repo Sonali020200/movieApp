@@ -2,6 +2,10 @@
 
 This Movie App is a web application built using the React framework. It leverages the OMDB API to fetch movie data, allowing users to search for movies, add them to their favorites list, and remove them from their favorites.
 
+## Demo Video
+
+https://github.com/Sonali020200/movieApp/assets/147674653/1f781478-14df-4f74-b1b1-828591895f9f
+
 ## Features
 
 - **Search Movies**: Users can search for movies by entering a keyword in the search box. The app fetches movie data from the OMDB API and displays relevant results.
